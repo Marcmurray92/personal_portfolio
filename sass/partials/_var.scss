@@ -1,0 +1,23 @@
+// Colors
+$base-text: #525258;
+$base-text-washout: transparentize($base-text, 0.6);
+$primary-color: #F60;
+$action-color: #477DCA !default;
+$footer-background: desaturate(darken($action-color, 20%), 30%);
+$footer-color: white;
+$footer-link-color: transparentize($footer-color, 0.6);
+$footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+
+
+// Screen Dimensions
+$small-screen: em(320) !default;
+$medium-screen: em(640) !default;
+$large-screen: em(860) !default;
+
+
+// Spacing
+
+$base-spacing: 1.5em !default;
+$pad-1: 1em;
+

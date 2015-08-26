@@ -1,0 +1,40 @@
+nav {
+    background-color: #FFF;
+    header {
+        @include shift(2);
+        padding: $pad-1 0;
+    }
+    a {
+        text-decoration: none;
+        color: $primary-color;
+        margin: 0 $pad-1;
+    }
+}
+
+.intro {
+    margin: 0 auto;
+    text-align: center;
+    color: #FFF;
+    h3 {
+        color: white;
+        line-height: 0.5em;
+        margin-top: 1em;
+    }
+    h4 {
+        color: white;
+        line-height: 0.5em;
+        margin-bottom: 2em;
+    }
+    a {
+    	text-decoration: none;
+    	color: white;
+    	padding: 0.8em;
+    	border: solid 1px white;
+    	border-radius: 5px;
+    }
+    a:hover {
+    	color: $action-color;
+    	background-color: white;
+    	transition: color,background-color 0.2s ease-in;
+    }
+}

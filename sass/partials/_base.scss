@@ -1,0 +1,91 @@
+body {
+    font-family: 'Lato';
+    font-weight: light;
+    margin: 0;
+    padding: 0;
+    background-color: $action-color;
+}
+
+// Section and article tags
+section {
+    @include outer-container;
+    @include span-columns(8);
+    @include shift(2);
+    padding: $pad-1;
+    background-color: white;
+    margin-top: 2em;
+    border-radius: 3px;
+}
+
+article {
+    header {
+        color: $primary-color;
+        padding: $pad-1;
+        padding-left: 0em;
+        @include media($small-screen) {
+            @include span-columns(12);
+        }
+        @include media($medium-screen) {
+            @include span-columns(3);
+        }
+    }
+    a {
+        font-weight: bold;
+        color: $base-text-washout;
+        text-decoration: none;
+    }
+    p {
+        color: $base-text;
+        padding: $pad-1;
+        @include media($small-screen) {
+            @include span-columns(12);
+            padding-left: 0;
+        }
+        @include media($medium-screen) {
+            @include span-columns(8);
+            padding-left: $pad-1;
+        }
+    }
+    footer {
+        font-size: 0.8em;
+        color: $base-text-washout;
+    }
+        a:hover {
+            transition: all 0.5s ease-in;
+            color: $primary-color;
+        }
+}
+
+aside {
+    text-align: right;
+    color: $action-color;
+}
+
+
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.2s;
+  -moz-animation-duration:0.2s;
+  animation-duration:0.2s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }

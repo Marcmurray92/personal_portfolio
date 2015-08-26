@@ -1,0 +1,37 @@
+.footer {
+  $base-spacing: 1.5em !default;
+  $footer-background: desaturate(darken($action-color, 20%), 30%);
+  background: $footer-background;
+  padding: ($base-spacing * 2) $gutter;
+  width: 100%;
+  @include span-columns(12);
+  padding-left: $pad-1;
+  margin-top: 2em;
+
+
+    footer {
+        @include shift(2);
+        display: inline-block; 
+        h4 {
+          color: white;
+          font-size: 1.1em;
+        }
+
+        a {
+          display: block;
+          text-decoration: none;
+          color: $footer-link-color;
+        }
+        span {
+          display: inline;
+        }
+    }
+}
+
+.aboutme {
+        @include media($medium-screen) {
+        @include span-columns(5);
+        @include shift(2);
+        }
+        color: white;
+}
