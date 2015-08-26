@@ -8,6 +8,22 @@
   padding-left: $pad-1;
   margin-top: 2em;
 
+      ul {
+          color: white;
+          list-style-type: none;
+          @include span-columns(3);
+        }
+      li {
+          color: white;
+          }
+      h4 {
+          color: white;
+      }
+      a {
+          color: white;
+          text-decoration: none;
+          }
+
 
     footer {
         @include shift(2);
@@ -29,9 +45,13 @@
 }
 
 .aboutme {
-        @include media($medium-screen) {
-        @include span-columns(5);
-        @include shift(2);
-        }
         color: white;
+}
+
+.foot-2 {
+  @include shift(2);
+  @include span-columns(5);
+}
+.foor-1 {
+  @include span-columns(3);
 }

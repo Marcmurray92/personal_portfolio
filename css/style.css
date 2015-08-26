@@ -222,6 +222,22 @@ nav {
   margin-top: 2em; }
   .footer:last-child {
     margin-right: 0; }
+  .footer ul {
+    color: white;
+    list-style-type: none;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 23.2317613015%; }
+    .footer ul:last-child {
+      margin-right: 0; }
+  .footer li {
+    color: white; }
+  .footer h4 {
+    color: white; }
+  .footer a {
+    color: white;
+    text-decoration: none; }
   .footer footer {
     margin-left: 17.0596085997%;
     display: inline-block; }
@@ -237,15 +253,23 @@ nav {
 
 .aboutme {
   color: white; }
-  @media screen and (min-width: 40em) {
-    .aboutme {
-      float: left;
-      display: block;
-      margin-right: 2.3576515979%;
-      width: 40.2913699012%;
-      margin-left: 17.0596085997%; }
-      .aboutme:last-child {
-        margin-right: 0; } }
+
+.foot-2 {
+  margin-left: 17.0596085997%;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 40.2913699012%; }
+  .foot-2:last-child {
+    margin-right: 0; }
+
+.foor-1 {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 23.2317613015%; }
+  .foor-1:last-child {
+    margin-right: 0; }
 
 .tooltip-hover {
   color: #F60; }
